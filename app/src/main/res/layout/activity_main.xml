@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="107dp"
+        android:layout_height="111dp"
+        android:src="@drawable/right"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="108dp"
+        android:layout_height="106dp"
+        android:rotation="180"
+        android:src="@drawable/left"
+
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="108dp"
+        android:layout_height="106dp"
+        android:rotation="90"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toBottomOf="@+id/forward" />
+
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_width="108dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="70dp"
+        android:rotation="-90"
+        android:src="@drawable/forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/back"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/turnValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="20dp"
+        android:text="Turn: 0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="15dp" />
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/seekBar"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:max="200"-->
+
+<!--        android:progress="100"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/back"-->
+<!--        app:layout_constraintVertical_bias="0.911"-->
+<!--        tools:visibility="gone" />-->
+
+    <com.codevblocks.android.knob.Knob
+        android:id="@+id/knob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_knob_background"
+        app:debug="false"
+        app:debug_drawBounds="false"
+        app:debug_drawTouchArea="false"
+
+        app:debug_drawTouchRadius="false"
+        android:clickable="true"
+        android:focusable="true"
+
+        app:debug_drawTrack="false"
+        app:fillColor="@android:color/transparent"
+        app:fillStartAngle="0"
+
+        app:fillSweepAngle="360"
+        app:knobSize="250dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxProgress="200"
+
+        app:progress="100"
+        app:progressMode="continuous"
+        app:progressStartAngle="135"
+        app:progressStrokeCap="butt"
+        app:progressStrokeColor="#FFEBBA64"
+
+        app:progressStrokeOffset="-14dp"
+        app:progressStrokeWidth="20dp"
+        app:progressSweepAngle="270"
+        app:stepAnchorX="50%"
+        app:stepAnchorY="0%"
+
+
+        app:stepCount="5"
+        app:stepDrawable="@drawable/drawable_knob_step"
+        app:stepOffset="-4dp"
+        app:substepAnchorX="50%"
+        app:substepAnchorY="0%"
+
+        app:substepCount="145"
+        app:substepDrawable="@drawable/drawable_knob_substep"
+
+        app:substepOffset="-4dp"
+        app:thumbAnchorX="50%"
+        app:thumbAnchorY="0%"
+        app:thumbDrawable="@drawable/drawable_knob_thumb"
+        app:thumbOffset="-4dp"
+
+        app:thumbRotation="true"
+        app:touchOffset="-16dp"
+        app:touchThreshold="48dp"
+        app:trackStrokeCap="butt"
+        app:trackStrokeColor="#18FFFFFF"
+        app:trackStrokeOffset="-14dp"
+        app:trackStrokeWidth="28dp" />
+
+    <Button
+        android:id="@+id/zero_turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="Zero turn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/car_horn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/car_horn" />
+
+    <TextView
+        android:id="@+id/text_horn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HORN"
+        app:layout_constraintBottom_toTopOf="@+id/car_horn"
+        app:layout_constraintEnd_toEndOf="@+id/car_horn"
+        app:layout_constraintStart_toStartOf="@+id/car_horn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="70"
+    android:viewportHeight="64">
+
+    <!-- Horn body -->
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M4,28h20v8H4z" />
+
+    <!-- Horn bell -->
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M24,24h8l12,-8v32l-12,-8h-8z" />
+
+    <!-- Sound waves -->
+    <path
+        android:strokeColor="@color/black"
+        android:strokeWidth="4"
+        android:fillColor="#0000"
+        android:pathData="M50,16c6,4 10,8 10,16s-4,12 -10,16" />
+
+    <path
+        android:strokeColor="@color/black"
+        android:strokeWidth="4"
+        android:fillColor="#0000"
+        android:pathData="M56,12c8,6 12,12 12,20s-4,14 -12,20" />
+
+</vector>
