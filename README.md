@@ -3,7 +3,7 @@ an andorid app to control esp32 powered robot car
 
 ![Car Steering Wheel](images/ss1.jpeg)
 
-![preview](https://github.com/krrishcoder/robot_car_controller/blob/main/preview_live.gif)
+![preview](https://github.com/krrishcoder/robot_car_controller/blob/main/clideo_editor_772a1b5ab54b4d0b90e38df779aa9c02.gif)
 
 ```kotlin
  private val ESP32_MAC = "5C:01:3B:33:92:E6"
