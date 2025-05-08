@@ -3,6 +3,8 @@ an andorid app to control esp32 powered robot car
 
 ![Car Steering Wheel](images/ss1.jpeg)
 
+### DEMO OF APP WITH A ROBOT (USING ESP 32 BLE enabled) 
+
 ![preview](https://github.com/krrishcoder/robot_car_controller/blob/main/clideo_editor_772a1b5ab54b4d0b90e38df779aa9c02.gif)
 
 ```kotlin
